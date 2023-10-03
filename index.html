@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Layout</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        
+    
+
+        .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            background: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .Logo{
+            font-size: 32px;
+            color:white;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .navbar a{
+            position: relative;
+            font-size: 18px;
+            color: white;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="Logo">Logo</a>
+        
+        <nav class="navbar">
+           <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Services</a>
+            <a href="#">FAQ</a>
+           </div>
+        </nav>
+    </header>
+    <div id="contentcontainer">
+        <h1>Home Content</h1>
+    </div>
+    <footer class="footer">
+        <h1>webdevvv</h1>
+    </footer>
+</body>
+</html>
