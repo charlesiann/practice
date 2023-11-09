@@ -1,170 +1,61 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout</title>
-    <style>
-        body {
-            background-image: url(civic1.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-            height: 150%;
-        }
-
-        .logo {
-            width: 100px;
-            cursor: pointer;
-        }
-
-        .navLinks {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #navLinks ul li {
-            list-style: none;
-            display: inline-block;
-            margin: 0 20px;
-            position: relative;
-        }
-
-        #navLinks ul li {
-            text-decoration: seagreen;
-            color: hsl(0, 0%, 100%);
-            text-transform: uppercase;
-        }
-
-        #navLinks ul li::after {
-            content: '';
-            height: 3px;
-            width: 0;
-            background: #008577;
-            position: absolute;
-            left: 0;
-            bottom: -10px;
-            transition: 0.5s;
-        }
-
-        #navLinks ul li:hover::after {
-            width: 100%;
-        }
-
-        #Home {
-            color: white;
-        }
-
-        #aboutus {
-            color: white;
-        }
-
-        #FAQ {
-            color: white;
-        }
-
-        #contentContainer {
-            color: hsl(0, 0%, 100%);
-        }
-
-        .contentContainer h1 {
-            color: white;
-            justify-content: center;
-            text-align: center;
-        }
-        
-
-        .contentContainer p {
-            margin: 20px auto;
-            font-weight: 100;
-            line-height: 25px;
-            color: white;
-            text-align: center;
-        }
-
-        button {
-            width: 200px;
-            padding: 15px 0;
-            text-align: center;
-            margin: 20px 10px;
-            border-radius: 25px;
-            font-weight: bold;
-            border: 2px solid #00d3be; 
-            background: transparent;
-            color: hsl(0, 0%, 100%);
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;  
-        }
-
-        span {
-            background: #00ceb9;
-            height: 100%;
-            width: 0;
-            border-radius: 25px;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            z-index: -1;
-            transform: 0.5s;
-
-        }
-
-        button:hover span {
-            width: 100%;
-        }
-
-        button:hover {
-            border: none;
-        }
-
-        footer {
-            text-align: center;
-            position:absolute;
-            bottom: 0;
-            width: 100%;
-            position:absolute;
-            color: white;
-            font-size: 30px;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div style="flex: 1">
-                </div>
-
-            <div class="navLinks">
-                <img src="type r.jpg" class="LOGO">
-
-                    <div id="navLinks">
-                        <ul>
-                            <li><a href="/index.html" id="Home">Home</a></li>
-                            <li><a href="/aboutus.html" id="aboutus">About Us</a></li>
-                            <li><a href="/FAQ.html" id="FAQ">FAQ</a></li>
-                        </ul>
-                    </div>
-                
-            </div>
-        </nav>
-    </header>
-    <div>
-        <div class="contentContainer">
-            <h1>HELLO I'M CHARLES IAN BARRAL</h1>
-                <p>This is my favorite car</p>
-                <p>Honda Civic FD and SIR</p>
-                <p>Honda Boys</p>
+    <div id="container">
+    <div id="formContainer">
+        <h1>Input</h1>
+        <div>
+            <label>Student ID:</label>
+            <input id="inputID" type="number" autocomplete="off" placeholder="Enter your ID"/>
         </div>
         <div>
-            <button type="button"><span></span>Honda civic is the best?</button>
-            <button type="button"><span></span>Or naaaahh?</button>
+            <label>First Name:</label>
+            <input id="inputFirst" type="text" autocomplete="off" placeholder="Enter your name" />
         </div>
+        <div>
+            <label>Last Name:</label>
+            <input id="inputLast" type="text" autocomplete="off" placeholder="Enter your last name" />
+        </div>
+        <div>
+            <label>Middle Initial:</label>
+            <input id="inputMI" type="text" autocomplete="off" placeholder="Enter your MI"/>
+        </div>
+        <div>
+            <label>Birth Date:</label>
+            <input id="inputBirth" type="date"  />
+        </div>
+        <div>
+            <label>Gender:</label>
+            <input id="inputGender" type="text" autocomplete="off" placeholder="Enter your gender" />
+        </div>
+        <div>
+            <label>Address:</label>
+            <input id="inputAddress" type="text" autocomplete="off" placeholder="Enter your address" />
+        </div>
+        <div>
+            <label>Contact Number:</label>
+            <input id="inputContact" type="number" autocomplete="off" placeholder="Enter your contact" />
+        </div>
+        <div>
+            <label>Course:</label>
+            <input id="inputCourse" type="text" autocomplete="off" placeholder="Enter your course" />
+        </div>
+        <button id="btnSubmit">Submit</button>
     </div>
-    <footer>
-        <p>HONDA!</p>
-    </footer>
-    
+    <div>
+        <h1>Output</h1>
+        <label id="outputNum"></label>
+    </div>
+</div>
 </body>
+<script src="./script.js"></script>
+
 </html>
