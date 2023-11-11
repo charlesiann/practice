@@ -1,0 +1,55 @@
+const studentIDElement = document.getElementById("inputID");
+const fnameElement = document.getElementById("inputFirst");
+const lnameElement = document.getElementById("inputLast");
+const midInitialElement = document.getElementById("inputMI");
+const birthDateElement = document.getElementById("inputBirth");
+const genElement = document.getElementById("inputGender");
+const addressElement = document.getElementById("inputAddress");
+const contactNumElement = document.getElementById("inputContact");
+const courseElement = document.getElementById("inputCourse");
+
+const btnSubmitElement = document.getElementById("btnSubmit");
+
+const op1Element = document.getElementById("s1")
+
+const opNameElement = document.getElementById ("s2")
+const opAgeElement = document.getElementById ("s3")
+
+const op2Element = document.getElementById("s4")
+const op3Element = document.getElementById("s5")
+const op4Element = document.getElementById("s6")
+const op5Element = document.getElementById("s7")
+const op6Element = document.getElementById("s8")
+
+btnSubmitElement.addEventListener("click", () => {
+    let studentID = studentIDElement.value;
+
+    let firstN = fnameElement.value;
+    let lastN = lnameElement.value;
+    let mInitial = midInitialElement.value;
+
+    let birthDate = new Date(birthDateElement.value);
+    let month = Date.now() - birthDate.getTime();
+    let age = new Date(month);
+    let year = age.getUTCFullYear();
+    let age_fn = Math.abs(year - 1970);
+    
+
+    let gender = genElement.value;
+    let address = addressElement.value;
+    let contactNum = contactNumElement.value;
+    let course = courseElement.value;
+
+    op1Element.innerHTML = "Student ID: " + studentID;
+    
+    opNameElement.innerHTML = "<br>Name:<br>" + firstN + " " + mInitial + " " + lastN;
+
+    op2Element.innerHTML = "<br>Birthdate:<br>" + birthDateElement.value;
+    opAgeElement.innerHTML = "<br>Age:<br>" + age_fn;
+
+    op3Element.innerHTML = "<br>Gender:<br>" + gender;
+    op4Element.innerHTML = "<br>Address:<br>" + address;
+    op5Element.innerHTML = "<br>Contact Number: " + contactNum;
+    op6Element.innerHTML = "<br>Course:<br>" + course;
+
+})
