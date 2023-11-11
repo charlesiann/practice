@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Form</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="formContainer">
+            <h1>Input</h1>
+            <div>
+                <label>Student ID:</label> <br>
+                <input id="inputID" type="number" placeholder="Enter your ID" />
+            </div>
+            <div>
+                <label>First Name:</label> <br>
+                <input id="inputFirst" type="text" placeholder="Enter your name" />
+            </div>
+            <div>
+                <label>Last Name:</label> <br>
+                <input id="inputLast" type="text" placeholder="Enter your last name" />
+            </div>
+            <div>
+                <label>Middle Initial:</label> <br>
+                <input id="inputMI" type="text" placeholder="Enter your MI" />
+            </div>
+            <div>
+                <label>Birth Date:</label> <br>
+                <input id="inputBirth" type="date" placeholder="Enter your birthday" />
+            </div>
+            <div>
+                <label>Gender:</label> <br>
+                <select id="inputGender">
+                    <option></option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
+                </select>
+            </div>
+            <div>
+                <label>Address:</label> <br>
+                <input id="inputAddress" type="text" placeholder="Enter your address" />
+            </div>
+            <div>
+                <label>Contact Number:</label> <br>
+                <input id="inputContact" type="number" placeholder="Enter your contact"/>
+            </div>
+            <div>
+                <label>Course:</label> <br>
+                <input id="inputCourse" type="text" placeholder="Enter your course" />
+            </div>
+            <button id="btnSubmit">Submit</button>
+        </div>
+        <div id="outputContainer">
+            <h1>Output</h1>
+            <div id="labelD">
+                <label id="s1"></label> <br>
+                <label id="s2"></label> <br>
+                <label id="s3"></label> <br>
+                <label id="s4"></label> <br>
+                <label id="s5"></label> <br>
+                <label id="s6"></label> <br>
+                <label id="s7"></label> <br>
+                <label id="s8"></label>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
