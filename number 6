@@ -1,0 +1,38 @@
+#include <stdio.h>
+using namespace std;
+void grade() {
+    int count = 0;
+    double total = 0;
+    int currentGrade;
+
+    printf("Enter grades. Enter 999 to finish.\n");
+
+    while (1) {
+        printf("Enter grade: ");
+        scanf("%d", &currentGrade);
+
+        if (currentGrade == 999) {
+            break;
+        }
+
+        if (currentGrade >= 0 && currentGrade <= 100) {
+            total += currentGrade;
+            count++;
+        } else {
+            printf("Invalid grade. Please enter a grade between 0 and 100.\n");
+        }
+    }
+
+    if (count > 0) {
+        double average = total / count;
+        printf("Average of valid grades: %.2f\n", average);
+    } else {
+        printf("No valid grades entered.\n");
+    }
+}
+
+int main() {
+    grade();
+
+    return 0;
+}
