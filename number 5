@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+const double GALLON_TO_LITER = 3.785;
+
+void convertGallonsToLiters() {
+    double gallons;
+
+    cout << "Enter ten values of gallons, one at a time:" << endl;
+
+    for (int i = 1; i <= 10; ++i) {
+        cout << "Enter value for gallon " << i << ": ";
+        cin >> gallons;
+
+        double liters = gallons * GALLON_TO_LITER;
+
+        cout << gallons << " gallons is equal to " << liters << " liters" << endl;
+    }
+}
+
+int main() {
+    convertGallonsToLiters();
+
+    return 0;
+}
